@@ -68,7 +68,7 @@ FauxJax.prototype.waitFor = function(n, callback) {
 
 FauxJax.prototype._newRequest = function(fakeRequest) {
   if (this.listeners('request').length === 0) {
-    this.emit('error', new Error('faux-jax: received an unexpected request: ' + fakeRequest.requestURL));
+    // this.emit('error', new Error('faux-jax: received an unexpected request: ' + fakeRequest.requestURL));
     return;
   }
 
