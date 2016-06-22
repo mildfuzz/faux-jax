@@ -65,7 +65,7 @@ FauxJax.prototype._newSocket = function(socket) {
 
 FauxJax.prototype._newRequest = function(req, res) {
   if (this.listeners('request').length === 0) {
-    this.emit('error', new Error('faux-jax: received an unexpected request: ' + req.headers.host + req.url));
+    // this.emit('error', new Error('faux-jax: received an unexpected request: ' + req.headers.host + req.url));
     return;
   }
 
